@@ -9,9 +9,14 @@ let arrayDue = [9, 4, 6, 8];
 console.log(arrayUno);
 console.log(arrayDue);
 
-while (arrayDue.length < arrayUno.length ){
-    let arrayElement = (prompt("Inserisci un elemento"));
-    arrayDue.push(arrayElement);
+while (arrayDue.length != arrayUno.length){
+    if (arrayDue.length < arrayUno.length){
+        let arrayElement = (prompt("Inserisci un elemento"));
+        arrayDue.push(arrayElement);
+    } else if (arrayDue.length > arrayUno.length) {
+        let arrayElement = (prompt("Inserisci un elemento"));
+        arrayUno.push(arrayElement);
+    }
 }
 
 console.log(arrayUno);
