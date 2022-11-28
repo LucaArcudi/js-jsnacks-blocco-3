@@ -3,12 +3,8 @@
 
 let userNumber = parseInt(prompt("Inserisci un numero"));
 
-let number = (0 < userNumber < 11);
-
-while (userNumber != number){
-    let userNumber = parseInt(prompt("Inserisci un numero"));
-
-    0 < userNumber < 11;
+while ((userNumber > 11) || (userNumber < 0)){
+    userNumber = parseInt(prompt("Inserisci un numero"));
 }
 
 

@@ -8,11 +8,9 @@ let userNumber = parseInt(prompt("Inserisci un numero"));
 
 emptyArray.push(userNumber);
 
-console.log(emptyArray);
+let sum  = 0;
+sum += emptyArray[i];
 
-let sum  = emptyArray[i] ;
-
-let i = 0;
 
 while(sum < 50){
     let userNumber = parseInt(prompt("Inserisci un numero"));
