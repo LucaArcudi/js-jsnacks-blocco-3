@@ -4,16 +4,18 @@
 
 let emptyArray = [];
 
-let userNumber = parseInt(prompt("Inserisci un numero"));
-
-emptyArray.push(userNumber);
+let userNumber;
 
 let sum  = 0;
-sum += emptyArray[i];
+
+
+console.log(sum);
 
 
 while(sum < 50){
-    let userNumber = parseInt(prompt("Inserisci un numero"));
-
-
+    userNumber = parseInt(prompt("Inserisci un numero"));
+    sum += userNumber;
+    emptyArray.push(userNumber);
 }
+
+console.log(sum);
