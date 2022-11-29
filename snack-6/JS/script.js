@@ -5,7 +5,8 @@
 
 
 function getRandomNumber (min, max){
-    return Math.random() * (max - min) + min;
+    const randomNumber = Math.random() * (max - min) + min;
+    return randomNumber;
 }
 
 console.log(getRandomNumber(4, 13));
