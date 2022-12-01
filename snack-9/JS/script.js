@@ -10,16 +10,21 @@
 
 const startingList = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 
-const newList = [];
+const finalList = [];
 
-for(let i = 0; i < 10; i++){
 
-    let randomNumber = getRandomNumber (0, startingList.length - 1);
+while (finalList.length < 10){
 
-    newList [i] = startingList[randomNumber];
-
+        const randomIndex = getRandomNumber (0, startingList.length - 1);
+        const randomElement = startingList[randomIndex];
+    
+        if (!finalList.includes(startingList[randomElement])){
+            finalList.push(startingList[randomElement]);
+        }
 
 }
+
+console.log(finalList);
 
 function getRandomNumber (min, max){
     if (min === max){
@@ -29,4 +34,3 @@ function getRandomNumber (min, max){
     return Math.floor(Math.random() * (max - min) ) + min;
 }
 
-console.log(newList);
