@@ -16,7 +16,7 @@ for(let i = 0; i < 10; i++){
 
     let randomNumber = getRandomNumber (0, startingList.length - 1);
 
-    newList [i] = startingList[Math.floor(Math.random() * startingList[randomNumber])];
+    newList [i] = startingList[randomNumber];
 
 
 }
